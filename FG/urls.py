@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base.urls')),
 ]
+
+# To create a superuser use the following command in the command line:
+# python manage.py createsuperuser
