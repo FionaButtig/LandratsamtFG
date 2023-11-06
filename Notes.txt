@@ -1,1 +1,5 @@
-10:07
+around 32:50
+
+
+In html:
+the {% %} stuff is to write python-like logic in html and the double {{}} is to add variables 
