@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+
+    {% if request.user.is_authenticated %}
+        <p>{{request.user}}</p>
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+    
+    <hr>
     <h1>Landratsamt FG</h1>
-    <a href="{% url 'task-create' %}">Add Task</a>
+    <a href="{% url 'task-create' %}">Add Post</a>
 
     <table>
         <tr>
@@ -20,6 +29,7 @@
             <td>{{task.title}}</th>
             <td><a href="{% url 'tasks' task.id %}">View</a></th>
             <td><a href="{% url 'task-update' task.id %}">Edit</a></th>
+            <td><a href="{% url 'task-delete' task.id %}">Delete</a></th>
         </tr>
         {% empty %}
             <h3>No items in list</h3>

@@ -115,6 +115,11 @@ USE_L10N = True
 USE_TZ = True
 
 
+# this is so that a user that isnt logged in cant access that homepage where all the tasks and stuff are
+# where to redirect the user if not authenticated
+LOGIN_URL = 'login'
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 

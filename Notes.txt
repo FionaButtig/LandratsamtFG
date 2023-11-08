@@ -1,6 +1,11 @@
 around 50
 
 
+Test User:
+username: test_user
+password: testingtesting
+
+
 In html:
 the {% %} stuff is to write python-like logic in html and the double {{}} is to add variables
 
