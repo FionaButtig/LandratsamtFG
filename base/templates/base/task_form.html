@@ -13,9 +13,9 @@
     <a href="{% url 'tasks' %}">Go back</a>
 
     <form method="POST" action="">
-        <!--some kinda safety feature that the form needs to work-->
+        <!-- a safety feature that the form needs to work: A CSRT token generates a unique, unpredictable and secret value by the server-side to be included in the clients HTTP request - this helps the server determin wether the user request is genuine and it helps avoid attacks-->
         {% csrf_token %}
-        <!--dont know what that is but the ad_p at the end makes it so the elements are aligned in order from top to bottom instead of side-by-side-->
+        <!-- the ad_p at the end makes it so the elements are aligned in order from top to bottom instead of side-by-side-->
         {{form.as_p}}
         <input type="submit" value="Submit">
     </form>

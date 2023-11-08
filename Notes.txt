@@ -2,4 +2,14 @@ around 50
 
 
 In html:
-the {% %} stuff is to write python-like logic in html and the double {{}} is to add variables 
+the {% %} stuff is to write python-like logic in html and the double {{}} is to add variables
+
+
+youtub account
+https://youtu.be/llbtoQTt4qw?si=YJqOO98lo8jOxP8b
+
+
+
+
+User Profile with Django models
+https://dev.to/earthcomfy/django-user-profile-3hik

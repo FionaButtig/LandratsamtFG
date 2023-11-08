@@ -4,6 +4,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from .models import Task
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 
 # Create your views here.
@@ -28,3 +29,12 @@ class TaskUpdate(UpdateView):
     model = Task
     fields = '__all__'
     success_url = reverse_lazy('tasks')
+
+
+# only users that are logged in can view user profiles
+@login_required
+class profile():
+    model = Task
+    context_object_name = 'task'
+    template_name = 'base/user/profile.html'
+
