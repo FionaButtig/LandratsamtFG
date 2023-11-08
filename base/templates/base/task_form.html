@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Fahrplan Form</h3>
+
+    <!--back link-->
+    <a href="{% url 'tasks' %}">Go back</a>
+
+    <form method="POST" action="">
+        <!--some kinda safety feature that the form needs to work-->
+        {% csrf_token %}
+        <!--dont know what that is but the ad_p at the end makes it so the elements are aligned in order from top to bottom instead of side-by-side-->
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

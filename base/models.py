@@ -16,7 +16,7 @@ class Task(models.Model):
     title = models.CharField(max_length=200)
     # CharField is usually used for shorter simpler stuff and Textfiled for more text
     description = models.TextField(null=True, blank=True) 
-    # when the items is first created its probably not completed yet so we want it to be False by default
+    # when the task is first created its probably not completed yet so we want it to be False by default
     complete = models.BooleanField(default=False)
     # auto_now_add basically takes a screenshot of when it was created and just uses that as the creation time
     created = models.DateTimeField(auto_now_add=True)
