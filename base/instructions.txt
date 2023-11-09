@@ -14,7 +14,7 @@ live server link: https://fionabuttig.pythonanywhere.com
 in pythonanywhere:
 superuser: Fiona
 
-cd fionabuttig.pythonanywhere.com
+cd landratsamtfg.pythonanywhere.com
 git pull
 python manage.py collectstatic
 
