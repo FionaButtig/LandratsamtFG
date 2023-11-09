@@ -45,7 +45,7 @@ class TaskDetail(LoginRequiredMixin, DetailView):
 # neue task erstellen
 class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
-    fields = '__all__' # instead of listing all the fields like 'title, description, etc.' that make up a Task seperately
+    fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks') #after creating an item this line just sends the user back to the homepage list
 
     def form_valid(self, form):
@@ -54,7 +54,7 @@ class TaskCreate(LoginRequiredMixin, CreateView):
 
 class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
-    fields = '__all__'
+    fields = ['title', 'description', 'complete']# instead of listing all the fields like 'title, description, etc.' that make up a Task seperately we could also just use '__all__' but that would make it so a user could choose a different user to create a post for and we dont want that
     success_url = reverse_lazy('tasks')
 
 

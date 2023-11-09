@@ -1,0 +1,21 @@
+pythonanywhere 
+
+activate virtual environment
+myvenv\Scripts\activate
+
+run webserver
+python manage.py runserver
+Lokale Adresse is: 	http://127.0.0.1:8000     http://127.0.0.1:8000/admin/
+
+live server link: https://fionabuttig.pythonanywhere.com
+
+
+
+in pythonanywhere:
+superuser: Fiona
+
+cd fionabuttig.pythonanywhere.com
+git pull
+python manage.py collectstatic
+
+dann bei pythonanywhere auf der hauptseite recht zu webapps gehen und dann reload server clicken
