@@ -74,9 +74,14 @@ label {
   padding: 5px;
 }
 
-#register_main_div {
-  background-color: white;
-  color: red;
+.register_main_div {
+  color: black;
+  margin-top: 50px;
+  width: 60%;
+  margin: auto;
+  height: 80%;
+  border-radius: 2px;
+  padding-top: 6%;
 }
 
 #conf_del_main_div {
@@ -157,10 +162,14 @@ label {
   background-color: #1b4ebb;
 }
 
-#post_main_div {
-  background-color: white;
-  color: blue;
+.post_main_div {
+  color: black;
   margin-top: 50px;
+  width: 60%;
+  margin: auto;
+  height: 80%;
+  border-radius: 2px;
+  padding-top: 6%;
 }
 
 #post_list_main_div {
