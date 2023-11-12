@@ -1,4 +1,10 @@
 #conf_del_main_div{
-    background-color: white;
-    color: green;
+    background-color: $saturated-blue;
+    color: white;
+    justify-content: center;
+    border-radius: 10px;
+    width: 56%;
+    height: 24%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
