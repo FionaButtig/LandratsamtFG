@@ -1,0 +1,50 @@
+#login_main_div{
+    background-color: rgb(83, 117, 191);
+    position: relative;
+    top: 16%;
+    justify-content: center;
+    border-radius: 10px;
+    width: 56%;
+    height: 62%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* header */
+
+.login_header{
+    width: 100%;
+    height: 20%;
+    border-bottom: solid 8px white;
+}
+
+.login_h1{
+    padding: 24px;
+    color: white;
+}
+
+
+
+/* main content + login Form */ 
+.login_content{
+    width: 100%;
+    height: 80%;
+    padding: 30px;
+    background-color: rgb(232, 232, 232);
+}
+
+.login_form{
+    padding-top: 30px
+}
+
+.login_submit_btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(83, 117, 191);
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+}
+

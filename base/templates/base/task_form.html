@@ -1,5 +1,7 @@
+{% extends 'base/main.html' %}
+{% block content %}
 
-
+<div id="center" id="post_main_div">
     <h3>Fahrplan Form</h3>
 
     <!--back link-->
@@ -12,3 +14,6 @@
         {{form.as_p}}
         <input type="submit" value="Submit">
     </form>
+</div>
+
+{% endblock content %}
