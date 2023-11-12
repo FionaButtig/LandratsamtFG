@@ -5,14 +5,15 @@
     <div class="login_header">
     <h1 class="login_h1">Login</h1>
     </div>
+
     <div class="login_content">
-    <form class="login_form" method="POST" action="">
+    <form class="login_form" method="POST">
         {% csrf_token %}
         {{form.as_p}}
         <input class="login_submit_btn" type="submit" value="Login">
     </form>
 
-    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+    <p class="login_to_register">Don't have an account? <a href="{% url 'register' %}">Register</a></p>
     </div>
 </div>
 
