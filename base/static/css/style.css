@@ -1,17 +1,13 @@
 #login_main_div {
-  background-image: -webkit-gradient(linear, left top, right top, from(#1b4ebb), to(#1f418b));
-  background-image: linear-gradient(to right, #1b4ebb, #1f418b);
+  background-image: linear-gradient(to right, rgb(27, 78, 187), rgb(31, 65, 139));
   position: relative;
   top: 16%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-radius: 10px;
   width: 56%;
   height: 62%;
   margin: auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* header */
@@ -32,7 +28,7 @@
   width: 100%;
   height: 80%;
   padding: 30px;
-  background-color: #f4f4f4;
+  background-color: rgb(244, 244, 244);
 }
 
 .login_form {
@@ -59,8 +55,7 @@ label {
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1b4ebb), to(#1f418b));
-  background-image: linear-gradient(#1b4ebb, #1f418b);
+  background-image: linear-gradient(rgb(27, 78, 187), rgb(31, 65, 139));
   border: solid 2px white;
   border-radius: 10px;
   color: white;
@@ -76,11 +71,13 @@ label {
 
 .register_main_div {
   color: black;
+  background-color: red;
   margin-top: 50px;
   width: 60%;
   margin: auto;
   height: 80%;
   border-radius: 2px;
+  border: solid 4px black;
   padding-top: 6%;
 }
 
@@ -93,8 +90,7 @@ label {
   width: 48%;
   height: 24%;
   margin: auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .confdel_header {
@@ -102,22 +98,17 @@ label {
   color: white;
   text-align: center;
   font-size: 1.2rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1b4ebb), to(#1f418b));
-  background-image: linear-gradient(to right, #1b4ebb, #1f418b);
+  background-image: linear-gradient(to right, rgb(27, 78, 187), rgb(31, 65, 139));
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 #confdel_options {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
   height: 50%;
   padding-top: 10px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .confdel_goback_btn {
@@ -132,34 +123,34 @@ label {
   margin-top: 10px;
   height: 40%;
   text-align: center;
-  background-color: #f4f4f4;
-  color: #1b4ebb;
+  background-color: rgb(244, 244, 244);
+  color: rgb(27, 78, 187);
   font-size: 1.2rem;
 }
 
 .confdel_goback_btn:hover {
-  color: #d0d0ff;
-  background-color: #1b4ebb;
+  color: rgb(208, 208, 255);
+  background-color: rgb(27, 78, 187);
   color: white;
 }
 
 .confdel_submit_btn {
   display: inline-block;
   font-size: 1.2rem;
-  border: solid 2px #f4f4f4;
+  border: solid 2px rgb(244, 244, 244);
   color: white;
   border-radius: 8px;
   margin-top: 9px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #f4f4f4;
-  color: #1b4ebb;
+  background-color: rgb(244, 244, 244);
+  color: rgb(27, 78, 187);
 }
 
 .confdel_submit_btn:hover {
   color: white;
   border-radius: 8px;
-  background-color: #1b4ebb;
+  background-color: rgb(27, 78, 187);
 }
 
 .post_main_div {
@@ -174,6 +165,21 @@ label {
 
 #post_list_main_div {
   padding: 50px;
+  width: 90%;
+  height: 80%;
+  background-color: red;
+  font-size: 2rem;
+}
+#post_list_main_div #search_btn {
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(rgb(27, 78, 187), rgb(31, 65, 139));
+  border: solid 2px white;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 16px;
+  font-size: 1rem;
 }
 
 #searchfield {
@@ -186,5 +192,4 @@ label {
 body {
   width: 100vw;
   height: 100vh;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,21 @@
 #post_list_main_div{
     padding: 50px;
+    width: 90%;
+    height: 80%;
+    background-color: red;
+    font-size: 2rem;
+
+    #search_btn{
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-image: linear-gradient($saturated-blue, $dark-blue,);
+        border: solid 2px white;
+        border-radius: 10px;
+        color: white;
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
 }
 
 #searchfield{

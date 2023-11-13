@@ -1,5 +1,6 @@
 {% extends 'base/main.html' %}
 {% block content %}
+
 <div id="post_list_main_div">
 <header>
     {% if request.user.is_authenticated %}
@@ -16,7 +17,7 @@
     <main>
     <form method="GET">
         <input id="searchfield" type="text" name='search-area' value="{{search_input}}">
-        <input type="submit" value="Search">
+        <input id="search_btn" type="submit" value="Search">
     </form>
 
     <table>
@@ -25,6 +26,7 @@
             <th></th>
             <th></th>
         </tr>
+    </div>
 {% for task in tasks %}
     <tr>
         <td>{{task.title}}</th>
@@ -34,7 +36,7 @@
     {% empty %}
         <h3>No items in list</h3>
 {% endfor %}
-</div>
+
 
 {% endblock content%}
 
