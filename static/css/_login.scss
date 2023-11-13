@@ -1,6 +1,5 @@
-
 #login_main_div{
-    background-image: linear-gradient(to right,$saturated-blue, $dark-blue,);
+    background-image: linear-gradient(to right,rgb(27, 78, 187), rgb(31, 65, 139));
     position: relative;
     top: 16%;
     justify-content: center;
@@ -22,18 +21,16 @@
 
 .login_h1{
     padding: 18px;
-    color: white;
+    color: red;
     font-size: 2.8rem;
 }
-
-
 
 /* main content + login Form */ 
 .login_content{
     width: 100%;
     height: 80%;
     padding: 30px;
-    background-color: $off-white;
+    background-color: rgb(244, 244, 244);
 }
 
 .login_form{
@@ -63,10 +60,10 @@ label{
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient($saturated-blue, $dark-blue,);
+    background-image: linear-gradient(rgb(27, 78, 187), rgb(31, 65, 139));
     border: solid 2px white;
     border-radius: 10px;
-    color: white;
+    color: blue;
     padding: 8px 16px;
     font-size: 1rem;
 }

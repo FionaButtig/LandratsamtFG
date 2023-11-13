@@ -1,6 +1,8 @@
 {% extends 'base/main.html' %}
 {% block content %}
-
+<html>
+<body>
+    
 <div id="post_list_main_div">
 <header>
     {% if request.user.is_authenticated %}
@@ -36,7 +38,8 @@
     {% empty %}
         <h3>No items in list</h3>
 {% endfor %}
-
+</body>
+</html>
 
 {% endblock content%}
 

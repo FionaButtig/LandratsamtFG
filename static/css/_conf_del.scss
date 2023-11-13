@@ -17,7 +17,7 @@
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    background-image: linear-gradient(to right,$saturated-blue, $dark-blue,);
+    background-image: linear-gradient(to right,rgb(27, 78, 187), rgb(31, 65, 139));
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -44,31 +44,31 @@
     margin-top: 10px;
     height: 40%;
     text-align: center;
-    background-color: $off-white;
-    color: $saturated-blue;
+    background-color: rgb(244, 244, 244);
+    color: rgb(27, 78, 187);
     font-size: 1.2rem;
 }
 .confdel_goback_btn:hover{
     color: rgb(208, 208, 255);
-    background-color: $saturated-blue;
+    background-color: rgb(27, 78, 187);
     color: white;
 }
 
 .confdel_submit_btn{
     display: inline-block;
     font-size: 1.2rem;
-    border: solid 2px $off-white;
+    border: solid 2px rgb(244, 244, 244);
     color: white;
     border-radius: 8px;
     margin-top: 9px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: $off-white;
-    color: $saturated-blue;
+    background-color: rgb(244, 244, 244);
+    color: rgb(27, 78, 187);
 }
 
 .confdel_submit_btn:hover{
     color: white;
     border-radius: 8px;
-    background-color: $saturated-blue;
+    background-color: rgb(27, 78, 187);
 }
