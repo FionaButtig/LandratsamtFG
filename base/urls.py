@@ -13,6 +13,7 @@ urlpatterns = [
     path('task/<int:pk>', TaskDetail.as_view(), name='tasks'),
     path('task-create', TaskCreate.as_view(), name='task-create'),
     # with task update and task detail, delete and update we need to target a specific task so thats why we write the <int:pk> at the end
+    
     path('task-update/<int:pk>', TaskUpdate.as_view(), name='task-update'),
     path('task-delete/<int:pk>', DeleteView.as_view(), name='task-delete'),
 ]

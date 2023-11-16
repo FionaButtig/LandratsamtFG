@@ -27,11 +27,13 @@
             <th>Item</th>
             <th></th>
             <th></th>
+            <th></th>
         </tr>
     </div>
 {% for task in tasks %}
     <tr>
         <td>{{task.title}}</th>
+
         <td><a href="{% url 'task-update' task.id %}">Edit</a></th>
         <td><a href="{% url 'task-delete' task.id %}">Delete</a></th>
     </tr>
