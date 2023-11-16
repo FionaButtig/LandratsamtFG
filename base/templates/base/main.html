@@ -113,17 +113,61 @@ body{
 
 /* register */
 
-.register_main_div{
+#register_main_div{
+    background-image: linear-gradient(to right,rgb(27, 78, 187), rgb(31, 65, 139));
+    position: relative;
+    top: 16%;
     color: black;
-    background-color: red;
-    margin-top: 50px;
-    width: 60%;
+    justify-content: center;
+    border-radius: 10px;
+    width: 56%;
+    height: 64%;
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.register_header{
+    width: 100%;
+    height: 20%;
+    color: black;
+    border-bottom: solid 8px white;
+}
+
+.register_h1{
+    padding: 18px;
+    color: white;
+    font-size: 2.8rem;
+}
+.register_content{
+    width: 100%;
     height: 80%;
-    border-radius: 2px;
-    border: solid 4px black;
-    padding-top: 6%;
-    padding: 30px;
+    padding: 16px;
+    padding-left: 30px;
+    color: black;
+    background-color: rgb(244, 244, 244);
+}
+
+.register_form{
+    padding-top: 8px;
+    columns: black;
+    display: inline-block;
+    width: 100%;
+}
+
+.register_to_login {
+    font-size: 1rem;
+}
+
+.register_submit_btn{
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgb(27, 78, 187), rgb(31, 65, 139));
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem;
 }
 
 /* end register */
@@ -180,7 +224,7 @@ body{
 }
 
 
-/* header */
+/* login header */
 
 .login_header{
     width: 100%;
@@ -197,7 +241,7 @@ body{
 
 
 
-/* main content + login Form */ 
+/* login main content + login Form */ 
 .login_content{
     width: 100%;
     height: 80%;
@@ -224,7 +268,7 @@ input[type=text], input[type=password], textarea{
 
 label{
     display: block;
-    padding-top: 10px;    
+    padding-top: 10px;   
 }
 
 
