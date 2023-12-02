@@ -23,6 +23,7 @@ class CustomLoginView(LoginView):
         return reverse_lazy('tasks')
 
 
+
 class RegisterPage(FormView):
     template_name = 'base/register.html'
     form_class = UserCreationForm
