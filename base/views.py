@@ -16,7 +16,7 @@ from .models import Task
 
 @login_required
 def profile(request):
-    return render(request, 'user/profile.html')
+    return render(request, 'base/profile.html')
 
 
 class CustomLoginView(LoginView):

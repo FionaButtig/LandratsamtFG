@@ -3,6 +3,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+class Profile(models.Model):
+     user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+     avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
+     bio = models.TextField()
+
+     def __str__(self):
+        return self.user.username
 
 
 # The class for a Task - Like if you want to add the Task "Do Homework" it has a user, a title "Do Homework", a description, a status (if its been completed or not) and a time when it was created
