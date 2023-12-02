@@ -9,7 +9,14 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm # also for Registration
 from django.contrib.auth import login # for Registration so that after creating their account they dont have to login again
 
+from django.contrib.auth.decorators import login_required
+
 from .models import Task
+
+
+@login_required
+def profile(request):
+    return render(request, 'user/profile.html')
 
 
 class CustomLoginView(LoginView):
@@ -22,7 +29,7 @@ class CustomLoginView(LoginView):
         # sends them to the list of all the tasks
         return reverse_lazy('tasks')
 
-
+ 
 class RegisterPage(FormView):
     template_name = 'base/register.html'
     form_class = UserCreationForm

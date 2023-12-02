@@ -11,7 +11,7 @@
     <h1 class="login_h1">Login</h1>
     </div>
 
-    <div class="login_content">
+    <div role="form" class="login_content">
     <form class="login_form" method="POST">
         {% csrf_token %}
         {{form.as_p}}
