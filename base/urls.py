@@ -6,7 +6,6 @@ from django.contrib.auth.views import LogoutView
 urlpatterns = [
     path('base/profile.html', UserPage, name='profile'),
 
-
     path('login/', CustomLoginView.as_view(), name='login'),
     # the ad_view() decides where to send the user after u click Logout - and we want to send em back to login
     path('logout/', LogoutView.as_view(next_page='login'), name='logout'),
