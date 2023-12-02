@@ -1,10 +1,17 @@
 {% extends 'base/main.html' %}
 {% block content %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
     
-<div id="post_list_main_div">
+<div role="main" id="post_list_main_div">
 <header>
+    <div role="navigation">
     {% if request.user.is_authenticated %}
     <a href="{% url 'profile' %}">Profile</a>
     <a href="">{{request.user}}</a>
@@ -16,6 +23,7 @@
     <hr>
     <h1>Landratsamt FG</h1>
     <a href="{% url 'task-create' %}">Add Post</a>
+    </div>
 </header>
 
 

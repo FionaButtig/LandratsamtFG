@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
+from django.views import View
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, FormView # using this one for the Registration Form
 from django.urls import reverse_lazy
@@ -8,16 +9,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm # also for Registration
 from django.contrib.auth import login # for Registration so that after creating their account they dont have to login again
-
-from django.contrib.auth.decorators import login_required
-
 from .models import Task
-
-
-@login_required
-def profile(request):
-    return render(request, 'base/profile.html')
-
 
 class CustomLoginView(LoginView):
     template_name = 'base/login.html'
@@ -30,6 +22,12 @@ class CustomLoginView(LoginView):
         return reverse_lazy('tasks')
 
  
+class UserPage(FormView):
+    template_name = "base/profile.html"
+    form_class = UserCreationForm
+    fields = "__all__"
+
+
 class RegisterPage(FormView):
     template_name = 'base/register.html'
     form_class = UserCreationForm
